@@ -16,7 +16,7 @@ if (content is not None) and (style is not None):
     style_image.save("images/style-images/user-style.jpg")
     st.image(style_image, caption='Your Style Image', use_column_width=True)
 
-    os_cmd = "python main.py eval --content images/content-images/user-content.jpg --style images/style-images/user-style.jpg"
+    os_cmd = "python3 main.py eval --content images/content-images/user-content.jpg --style images/style-images/user-style.jpg"
 
     if st.button('Create Style Transfer Image'):
         os.system(os_cmd)
